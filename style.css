@@ -1,0 +1,22 @@
+nav ul li{
+	padding:0 0.3em;
+	border: white 8px;
+}
+
+.intro {
+	background-image: url("cover.jpg");
+	background-position: center;
+	background-attachment: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 99%;
+	margin: 0.5%;
+	
+	box-shadow:black 0.2% ;
+}
+
+.profile {
+	margin-top: 5%;
+
+	border-radius: 4%;
+}
