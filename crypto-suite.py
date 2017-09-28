@@ -73,22 +73,6 @@ def isPrime(n):
 			#print(x) 
 			return False 
 	return ans
-def smallPrime(l):
-	while True :
-		i = randrange(1,l)
-		if isPrime(i) :
-			return i 
-def genPrime(len):
-	p = smallPrime(10)
-	limit = 2**len
-	while p < len :
-		p = (2**p)-1
-		while not isPrime(p):
-			p = p+2
-	p = (2**p)-1
-	while not isPrime(p):
-		p = p+2
-	return p
 def genPrime2(len):
 	i = 2**len - 1
 	while not isPrime(i) :
