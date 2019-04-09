@@ -1,0 +1,20 @@
+On comparing Task2_submit.png,Task3_submit.png and Task4_submit.png,
+in the first case we are taking random neighbours and in the next case we are taking only those routes were we consider nearest neighbours to the node and in third case we are creating a mst which will have minimum weight edges possible in it. So, as we increase the specification on neighbours to get closer to the required shortest path, the number of iterations taken will be lesser.
+
+
+
+
+Task 6:
+On comparing Task2_submit.png and Task6_submit.png,
+The faster convergence in the 3opt + 2opt case(Task6_submit.png case) compared to 2opt(Task2_submit.png case) is because of larger number of neighbours and hence better minimum. Hence will take lesser number of iterations.
+
+
+Task 7:
+Looking at Task7_submit.png,Task3_submit.png,Task6_submit.png
+Using nearest neighbours we will achieve faster convergence because of choosing the better tour.There by taking lesser number of iterations for Task7_submit.png when compared to Task6_submit.png case. The faster convergence in 3opt+2opt case is because of larger number of neighbours.
+
+
+
+Task 8:
+Looking at Task8_submit.png,Task4_submit.png,Task7_submit.png
+Using nearest neighbours we will achieve faster convergence because of choosing the lesser distance tour from mst.There by taking lesser number of iterations for Task8_submit.png when compared to Task7_submit.png case. There is no much difference in the 3opt+2opt case and 2opt case in mst generation and hence this methods.
