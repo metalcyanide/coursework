@@ -1,0 +1,32 @@
+#!/bin/bash
+clear
+pass=0
+fail=0
+l=3
+flex scanner.l
+g++ -include allheaders.h -L. -Wl,-rpath=. lex.yy.c -o yoursclp -lsclpshared -lfl -ly
+
+for i in $(find NonError -name "*.c"); 
+do 
+    ./sclp -tokens $i #>temp1.txt 2>&1
+    cp $i.toks temp1.txt
+    ./yoursclp -tokens $i #>temp2.txt 2>&1
+    cp $i.toks temp2.txt
+    
+    DIFF=$(diff temp1.txt temp2.txt) 
+    if [ "$DIFF" == "" ] 
+    then
+	pass=$((pass+1))
+	 echo "Passed $i"
+   
+    else
+	fail=$((fail+1))
+	echo "Failed $i"
+    fi
+done
+#rm temp1.txt
+#rm temp2.txt
+
+echo "Passed Cases $pass"
+echo "Failed Cases $fail"
+
