@@ -1,0 +1,33 @@
+Task 2:
+1)As the number of data points seen increases, the weight vector moves towards the more precise one.
+  so the accuracy for both the training data and test data increases.
+
+2)Initially the number of training points are less and hence it fits the points nicely.
+ As, it doesn't have too many points it cannot account for new points that precisely. 
+ As the points increase, fitting the training points becomes less accurate, because few points 
+ fall off the curve but the accuracy for the new points(test data) increases.
+
+ 2.1)when there is no training data it uses the intialised classifier and the accuracy will be low
+
+
+ Task 3.1
+
+mcn@gainyny:~/Desktop/classification$ python dataClassifier.py -c 1vr -t 800 -s 8000
+....
+4716 correct out of 8000 (59.0%).
+
+mcn@gainyny:~/Desktop/classification$ python dataClassifier.py -c 1v1 -t 800 -s 8000
+.....
+5724 correct out of 8000 (71.5%).
+
+Here 1v1 have more weight vectors than 1vr and there by guessing on the test data will be more effective.
+
+mcn@gainyny:~/Desktop/classification$ python dataClassifier.py -c 1vr -t 80000 -s 20000
+....
+14752 correct out of 20000 (73.8%).
+
+mcn@gainyny:~/Desktop/classification$ python dataClassifier.py -c 1v1 -t 80000 -s 20000
+.....
+15766 correct out of 20000 (78.8%).
+
+Here the later one will overfit the data because of more weight vectors and there by less relative increase in test accuracy

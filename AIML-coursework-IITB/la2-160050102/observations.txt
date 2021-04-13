@@ -1,0 +1,30 @@
+2.1)
+learning rate = 0.1
+no.of hidden layers = 1
+no.of nodes in hidden-layer = 5
+number of epochs = 50
+batchSize = 25
+
+2.2)
+learning rate = 0.1
+no.of hidden layers = 1
+no.of nodes in hidden-layer = 5
+number of epochs = 50
+batchSize = 25
+
+2.3)
+learning rate = 0.1
+no.of hidden layers = 1
+no.of nodes in hidden-layer = 5
+number of epochs = 50
+batchSize = 25
+
+2.4)
+learning rate = 0.1
+no.of hidden layers = 3
+no.of nodes in ConvolutionLayer = 1210
+no.of nodes in AvgPoolingLayer = 160
+no.of nodes in flatten layer = 160
+number of epochs = 30
+batchSize = 10
+seed value = 4

@@ -1,0 +1,7 @@
+1)
+It is in accordance with the theoritical result that boosting will achieve 100% accuracy with 
+sufficient higher number of iterations whereas bagging remains more or less constant.
+In boosting every iteration will correct the mis-classification of previous misclassified points.
+
+2) It doesn't exists.
+   The triangle distribution discussed in the class can be represented using 3 perceptrons but cannot be represented by single perceptron.

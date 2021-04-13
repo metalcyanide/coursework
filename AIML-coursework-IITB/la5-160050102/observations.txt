@@ -1,0 +1,24 @@
+Task 3:
+For lasso, I had first compared for 0,200*1000 and then 200*1000,400*1000 and then 400*1000,600*1000 so then I found that
+minimum occurs at around 340000
+
+For ridge i had started from 0,10 and then 10,20 and found that minimum occurs at 12. 
+
+Lasso : From the plots,
+		lambda = 340000 (approx)
+		SSE = 533598682638.3136
+		max_iterations = 2000
+		splits = 6
+
+
+Ridge : From the plots,
+		lamda = 12 (approx)
+		SSE = 540434270211.07745
+		max_iter=30000
+		lr=0.00001
+		epsilon = 1e-4
+		splits = 6
+
+Task 5:
+
+Lasso has sparse points than compared to ridge as lasso doesn't take axes that seriously.The solution from lasso contains more zeros than ridge,i.e,along axes and lasso disregards useless features.It removes the over-fitting problem. As, we are less concerned with the unnecessary features, the sse would be lesser and hence we get lesser value compared to ridge.
