@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chaithanya Naik</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet"> 
+  <link rel="html" type="text/html" href="timetable.html">
+  <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style type="text/css">
+    .w3-card-4 {
+      margin-bottom: 5%;
+    }
+    td,th,tr {
+      
+     
+    }
+  </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<button onclick="topFunction()" id="myBtn" title="Go to top" style='z-index:1000; margin-bottom:10px;'>Top</button>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+     <div class="navbar-header">
+       <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+       </button>
+       <img src='iitlogo.jpg' alt='group-icon' height='40px;' class='w3-round-large'/ 
+       style="float: left; margin-top: 5px; margin-right: 5px; ">
+       <a class="navbar-brand" href="#Home">Chaithanya Naik|चैतनया नायक</a>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav" style="float: right;">
+      <li class="active"><a href="#Home">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#acads">Academics</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+    </div>
+    </div>
+   </nav> 
+    
+   <div class="home scbackgr " id="Home">
+
+    
+    <div class="container-fluid">
+    <div class="row">
+      <div class="container-fluid" >
+        <div class="col-sm-12 " style=" margin-top: 5%; padding-top:8%; color: white;">
+        <center>
+        <div class="w3-card-4 w3-round-large w3-animate-zoom" style=" width: 50%;background-color: rgba(20,20,20,0.6); padding:2%;">
+          
+            <p>
+              <h2>Welcome to my webpage</h2>
+              <hr style="width:60%" />
+              <h3 style=" font-family: 'Oleo script', cursive;"> <strong><i>Chaithanya Naik </i></strong></h3>
+              <span> B.TECH II YEAR | CSE | IITBOMBAY </span>
+              <hr style="width:60%"/>
+            </p>
+            <a class="btn-info navbar " id="myNavbar" href="#about-me">Know More</a>
+          
+        </div>
+        </center>
+      </div>
+    </div>
+      <div class="row">
+        <div class="container" style="padding-top:150px; align-items: center;">
+          <!--
+          <div class="col-sm-4">
+          <img src="profile_pic.png" width="80%" class="img-responsive img-rounded"  ><br>
+         </div>
+   
+         <div class="col-sm-8" style="background-color: rgba(20,20,20,0.4); color: white;">
+           <h2>About Me</h2>
+           <div style="font-family: Dhurjati, serif;">చైతన్య నాయక్  <br/>चैतनया नायक</div>
+           <hr style="height:2px; border:none; color:#333; background-color:#333;">
+            <p class="lead" style="text-indent: 5em;">Hi! I'm Chaithanya Naik, a second year Undergraduate student in <a href="http://www.cse.iitb.ac.in/" target="_blank"> Computer Science and Engineering Department</a> at<a href="http://www.iitb.ac.in" target="_blank"> IIT Bombay</a>.
+                <br>
+           I'm from Punganur,Andhra Pradesh.
+           </p>
+           </div>
+          </div>
+  -->
+        </div>
+    </div>
+   </div>
+   </div>
+   
+   <div class="look_good"></div>
+   <section class='w3-animate-left' style='align-items:center; padding-top:3%; background-color: white;' >
+   <div class="scbackgr" id="about-me">
+   
+    <div class="w3-card-4 w3-round-large" style=" width:98%;padding:1.3% 0;margin:1% 1%;">
+    <div class="w3-container">
+   <div class="col-sm-4">
+      <img src="profile_pic.png" width="80%" class="img-responsive img-rounded"  ><br>
+    </div>
+    <div class="col-sm-8" style="background-color: rgba(255,255,255,0.6);">
+       <header class="w3-container " >
+      <center><h1>Intro</h1></center>
+     <hr style="height:2px; border:none; color:#333; background-color:#333;">
+    </header>
+      <p class="lead" style="text-indent: 5em;">Hi! I'm Chaithanya Naik, a second year Undergraduate student in <a href="http://www.cse.iitb.ac.in/" target="_blank"> Computer Science and Engineering Department</a> at<a href="http://www.iitb.ac.in" target="_blank"> IIT Bombay</a>.
+      <br>
+      I'm from Punganur,Andhra Pradesh.
+      </p>
+    </div>
+    </div>
+    </div>
+    <div class="w3-card-4 w3-round-large" style=" background-color: rgba(255,255,255,0.6);width:98%;padding:1.3% 0;margin:1% 1%;">
+    <div class="w3-container">
+    <div class="col-sm-12">
+    <header class="w3-container" >
+      <center><h1>Hobbies</h1></center>
+     <hr style="height:2px; border:none; color:#333; background-color:#333;">
+    </header>
+      <p class="lead" style="text-indent: 5em;"> I'm interested in sports and travel.<br/>My hobbies are:
+      <ul>
+        <li>Playing Badminton,cricket,carroms,chess and rubik's cube</li>
+        <li>Reading thriller Novels</li>
+        <li>Movies</li>
+        <li>Cycling</li>
+      </ul>
+      </p>
+    </div>
+     </div>
+     </div>
+     </div>
+     </section>
+     <div class="look_good"></div>
+     <!--
+   <div class="container-fluid">
+    <div class="row">
+    <div class="container" style="padding-top:150px; align-items: center;">
+    <div class="col-sm-4">
+      <img src="profile_pic.png" width="80%" class="img-responsive img-rounded"  ><br>
+    </div>
+    <div class="col-sm-8" style="background-color: rgba(20,20,20,0.4); color: white;">
+      <h2>About Me</h2>
+      <hr style="height:2px; border:none; color:#333; background-color:#333;">
+      <p class="lead" style="text-indent: 5em;">Hi! I'm Chaithanya Naik, a second year Undergraduate student in <a href="http://www.cse.iitb.ac.in/" target="_blank"> Computer Science and Engineering Department</a> at<a href="http://www.iitb.ac.in" target="_blank"> IIT Bombay</a>.
+      <br>
+      I'm from Punganur,Andhra Pradesh.
+      </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    -->
+    <div class="look_good"></div>
+   <div class="scbackgr" id="acads">
+    <div class="w3-card-4 w3-round-large" style=" background-color: rgba(255,255,255,0.7);width:98%;padding:1.3% 0;margin:1% 1%;">
+    <div class="w3-container">
+      <header class="w3-container " >
+      <center><h1>Courses</h1></center>
+      <hr style="height:2px; border:none; color:#333; background-color:#333;">
+      </header>
+    <div id="courses">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-12 w3-card-4" style="background-color: rgba(255,255,255,0);margin:2%;">
+     <h2>Autumn 2016</h2>
+     <hr/>
+     <table  cellpadding="5" width="100%">
+       <thead>
+         <td>Course code</td>
+         <td>Course name</td>
+         <td>Prof.</td>
+       </thead>
+       <tr>
+         <td>CH105</td>
+         <td>Organic and Inorganic Chemistry</td>
+         <td>R.B.Sunoj, C.P.Rao</td>
+       </tr>
+       <tr>
+         <td>CH107</td>
+         <td>Physical Chemistry</td>
+         <td>Arindham Choudary</td>
+       </tr>
+       <tr>
+         <td>PH107</td>
+         <td>Quantum Physics</td>
+         <td>Aftab Alam</td>
+       </tr>
+       <tr>
+         <td>MA105</td>
+         <td>Calculus</td>
+         <td>A.K.Pani</td>
+       </tr>
+       <tr>
+         <td>CS101</td>
+         <td>Computer</td>
+         <td>Bernard</td>
+       </tr>
+       <tr>
+         <td>PH117</td>
+         <td>Physics Lab</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>ME113</td>
+         <td>Mechanical Workshop </td>
+         <td></td>
+       </tr>
+     </table>
+     
+     </div>
+    <div class="col-sm-12 w3-card-4" style="background-color: rgba(255,255,255,0);margin:2%;padding-right: 2%;">
+       <h2>Spring 2016</h2>
+     <hr/>
+     <table cellpadding="5" width="100%">
+       <thead>
+         <td>Course code</td>
+         <td>Course name</td>
+         <td>Prof.</td>
+       </thead>
+       <tr>
+         <td>CS154</td>
+         <td>Abstractions and Paradigms lab</td>
+         <td>Amithabha Sanyal</td>
+       </tr>
+       <tr>
+         <td>CS152</td>
+         <td>Abstractions and Paradigms </td>
+         <td>Amithabha Sanyal</td>
+       </tr>
+       <tr>
+         <td>PH108</td>
+         <td>Electricity and magnetism</td>
+         <td>Pradeep Sarin</td>
+       </tr>
+       <tr>
+         <td>MA106</td>
+         <td>Linear Algebra</td>
+         <td>Akhil Ranjan</td>
+       </tr>
+       <tr>
+         <td>MA108</td>
+         <td>Differential Equations</td>
+         <td>Preeti Raman</td>
+       </tr>
+       <tr>
+         <td>ME119</td>
+         <td>Engineering Drawing</td>
+         <td>R.P.Vedula</td>
+       </tr>
+       <tr>
+         <td>CH117</td>
+         <td>Chemistry Lab</td>
+         <td></td>
+       </tr>
+     </table>
+      </div>
+      </div>
+      </div>
+
+    </div>
+     </div>
+     </div>
+     <div class="w3-card-4 w3-round-large" style=" background-color: rgba(255,255,255,0.7);width:98%;padding:1.3% 0;margin:1% 1%;">
+    <div class="w3-container">
+      <header class="w3-container " >
+      <center><h1>My Timetable</h1></center>
+      <hr style="height:2px; border:none; color:#333; background-color:#333;">
+      </header>
+ <table  cellspacing="0" cellpadding="9" bordercolor="#000000" border="1">
+      
+      
+      <tbody><tr>
+        <td width="7">Time---&gt; <br>
+                       Days </td>
+        
+          <td>08:30<br>09:25</td>
+          
+          <td>09:30<br>10:25</td>
+          
+          <td>09:30<br>10:55</td>
+          
+          <td>10:35<br>11:30</td>
+          
+          <td>11:35<br>12:30</td>
+          
+          <td>14<br>15:25</td>
+          
+          <td>14<br>16:55</td>
+          
+          <td>15:30<br>16:55</td>
+          
+      </tr>
+      
+      
+          <tr>
+          <td>Mon</td>
+          
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 207</b><br>[LC 102 - Class Room : LC 102 ] : <i>Diwan A.A.</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>EE 101</b>(S5 )<br>[SMA113 - Class Room : IC 2 ] : <i>Ashwin Tulapurkar</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 293</b><br>Venue Not defined : <i>R. K. Shyamasundar</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+          </tr>
+          
+          <tr>
+          <td>Tue</td>
+          
+            <td><br><b>EE 101</b>(S5 )<br>[SMA113 - Class Room : IC 2 ] : <i>Ashwin Tulapurkar</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 207</b><br>[LC 102 - Class Room : LC 102 ] : <i>Diwan A.A.</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 215</b><br>[GL-402 - Class Room : EEG-401 ] : <i>Ajit V. Rajwade</i><hr><br><b>CS 215</b><br>[GL-402 - Class Room : EEG-401 ] : <i>Suyash P. Awate</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 213</b><br>[LC 001 - Class Room : LC 001 ] : <i>R. K. Shyamasundar</i><hr>&nbsp;</td>
+            
+          </tr>
+          
+          <tr>
+          <td>Wed</td>
+          
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>EE 210</b>(M  )<br>[GL-G08 - Class Room : EEG-001 ] : <i>Chaudhuri Subhasis</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+          </tr>
+          
+          <tr>
+          <td>Thu</td>
+          
+            <td>&nbsp;</td>
+            
+            <td><br><b>EE 101</b>(S5 )<br>[SMA113 - Class Room : IC 2 ] : <i>Ashwin Tulapurkar</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 207</b><br>[LC 102 - Class Room : LC 102 ] : <i>Diwan A.A.</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+          </tr>
+          
+          <tr>
+          <td>Fri</td>
+          
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>EE 210</b>(M  )<br>[GL-G08 - Class Room : EEG-001 ] : <i>Chaudhuri Subhasis</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 215</b><br>[GL-402 - Class Room : EEG-401 ] : <i>Suyash P. Awate</i><hr><br><b>CS 215</b><br>[GL-402 - Class Room : EEG-401 ] : <i>Ajit V. Rajwade</i><hr>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            
+            <td><br><b>CS 213</b><br>[LC 001 - Class Room : LC 001 ] : <i>R. K. Shyamasundar</i><hr>&nbsp;</td>
+            
+          </tr>
+          </tbody></table>
+          </div>
+          </div>
+          </div>
+   </div>
+   <div class="look_good"></div>
+   <div class="scbackgr" id="resume">
+    <div class="w3-card-4 w3-round-large" style=" background-color: rgba(255,255,255,0.7); width:98%;padding:1.3% 0;margin:1% 1%; min-height: 600px;">
+      <header class="w3-container " >
+      <center><h1>RESUME</h1></center>
+      <hr style="height:2px; border:none; color:#333; background-color:#333;">
+      </header>
+
+    <div class="w3-container">
+        <h3>Yet to come</h3>
+        <h5>Stay Tuned :P</h5>
+    </div>
+    </div>
+   </div>
+   <div class="look_good"></div>
+   <div class="scbackgr" id="contact" style="padding-top:50px;">
+     <footer class="text-center w3-card-4 w3-round-large" style="width:95%;padding:3% ;margin:1% 3%; background-color: white; opacity: 0.9;">
+<div class="row">
+<div class="col-md-6" >
+<form action="#" method="GET">
+<h2>Wanna say something!</h2>
+    <hr style="height:2px;border:none;color:#333;background-color:#333;">
+<div class="form-group">
+ <input class='form-control' name='name' type='text' placeholder='Name' ></input>
+</div>
+<div class="form-group">
+ <input class='form-control' name='email' type='email' placeholder='email'></input>
+</div>
+<div class="form-group">
+  <textarea class="form-control" rows="5" placeholder="Suggestion" ></textarea>
+</div>
+<div class="form-group">
+ <button type="submit" class="btn btn-info">Submit</button>
+</div>
+</form>
+</div>
+<div class="col-md-6" style="text-align:  left;">   
+    <h2>Contact Info</h2>
+    <hr style="height:2px;border:none;color:#333;background-color:#333;">
+    <h4>Room No. 16, Hostel 7<br>
+    IIT Bombay, Powai-400076<br>
+    Mumbai, Maharashtra<br>
+    India<br>
+    Email: <a href="mailto:chaithumcn@cse.iitb.ac.in">chaithumcn@cse.iitb.ac.in</a> , 
+    <a href="mailto:chaithanyampcrl@gmail.com">chaithanyampcrl@gmail.com</a><br><br>
+    <h4>Social Networks : <br></h4>
+     <a href="#"><i class="fa fa-facebook-square fa-3x " ></i></a>
+     <a href="#"><i class="fa fa-google-plus fa-3x sog" ></i></a>
+     <a href="#"><i class="fa fa-linkedin fa-3x sol" ></i></a>
+      <a href="#"><i class="fa fa-instagram fa-3x sol" ></i></a>
+       <a href="#"><i class="fa fa-twitter fa-3x sol" ></i></a>
+    
+</div>
+</div>
+</footer>
+   </div>
+</body>
+</html>
